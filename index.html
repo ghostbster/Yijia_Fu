@@ -1,14 +1,50 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Website Title</title>
-    <link rel="stylesheet" href="style.css"> <!-- Link to your CSS file -->
-</head>
-<body>
-    <h1>Welcome to My Website</h1>
-    <p>This is the homepage of my website.</p>
-    <!-- Add more content here -->
-</body>
+
+<html>
+    <head>
+        <title>Yijia Fu - Stage Manager & Theatre Technician</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+
+    <body>
+      <div id="navbar-placeholder"></div>
+
+      <!-- 加载导航栏的脚本 -->
+   <script>
+        fetch('navbar.html')
+    .then(response => {
+        if (!response.ok) throw new Error(`HTTP error! Status: ${response.status}`);
+        return response.text();
+    })
+    .then(data => {
+        console.log('Navbar loaded successfully:', data);
+        document.getElementById('navbar-placeholder').innerHTML = data;
+    })
+    .catch(error => console.error('Error loading navbar:', error));
+</script>
+      
+        <h1>About Me</h1>
+            <div class="content">
+              
+                <p>Originally from Shanghai, Yijia/Jessica (she/her) attended Wake Forest University in North Carolina, where she received her B.A. in Theatre. 
+
+                    <br>From a young age, Yijia developed a passion for practical problem-solving and is well-versed in collaborative, team-based work. During her junior year, she made the decision to transfer from a Biology major to a Theatre major, pursuing her true passion. Since making this decision, Yijia has dedicated every semester to learning and working in the WFU theatre program. She has taken nearly every class offered to explore various possibilities and determine her specific career path. Although she has not yet finalized her direction, Yijia enjoys collaborating with others to complete projects, leading her to lean towards stage management while remaining open to gaining experience in all aspects of the industry.
+                    
+                    <br>During her undergraduate studies, Yijia worked at both the Tedford Stage and the Ring Stage. She is proudly part of the “RATS” in the scene shop, which stands for “Really Awesome Theatre Students.” Yijia works at least 20 hours per semester in the shop and also participates as a crew member in various productions. From 2022 to 2024, she took on multiple roles, including sound designer, costume designer, light board operator, focus spot operator, fly operator, and wardrobe person in different plays.
+                    
+                    <br>Yijia served as an assistant stage manager under Stage Manager Georgia Orchid for *Turning 15 on the Road to Freedom*. In the following semester, she took on the role of stage manager for the Spring Student Choreographic Concert, directed by Tina Yarborough Liggins.
+                    
+                    <br>In her free time, Yijia enjoys listening to music, reading, traveling, playing board games, and spending time with friends.
+                    
+                </p>
+                <img src="../pic1.jpg" alt="../pic2.jpg" class="headshot">
+
+                <!-- <div>
+                    <button type="button"><span></span>WATCH MORE</button>
+                    <button type="button"><span></span>bb</button>
+                </div> -->
+
+            <!-- </div> -->
+        </div>
+    </body>
 </html>
