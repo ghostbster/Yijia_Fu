@@ -1,0 +1,39 @@
+<html>
+    <head>
+        <title>Yijia Fu - Stage Manager & Theatre Technician</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+<body>
+    
+       
+          <div id="navbar-placeholder"></div>
+          
+
+          <!-- 加载导航栏的脚本 -->
+          <script>
+              fetch('navbar.html')
+                  .then(response => response.text())
+                  .then(data => {
+                      document.getElementById('navbar-placeholder').innerHTML = data;
+                  })
+                  .catch(error => console.error('Error loading navbar:', error));
+          </script>
+    <!DOCTYPE html>
+
+
+    <!-- <h1>My Google Document</h1> -->
+
+    <!-- Google Doc 嵌入 -->
+    <iframe src="https://docs.google.com/document/d/e/2PACX-1vTZBAjIqyXIMRvBHbSaZuXl9ySOQqVx3f1VkdQTAZFqdi78ONheQydJTMSdmVJ6xrIPkqRynXQvUSwH/pub?embedded=true"
+            width= "60%" 
+            height="70%" 
+            frameborder="0" 
+            scrolling= "Yes">
+    </iframe>
+
+</body>
+</html>
+
+</body>
+</html>

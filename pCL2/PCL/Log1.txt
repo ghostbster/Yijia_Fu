@@ -1,0 +1,39 @@
+[21:22:37.209] [Start] 程序版本：Release 2.7.1（321）
+[21:22:37.212] [Start] 识别码：CA1A-3795-52DF-5CEA
+[21:22:37.212] [Start] 程序路径：C:\Users\jessi\Desktop\personal_web\pCL2\Plain Craft Launcher 2.exe
+[21:22:37.226] [Start] 第一阶段加载用时：375 ms
+[21:22:37.452] [Loader] 加载器 Minecraft Folder List 状态改变：Loading
+[21:22:37.452] [Start] 第二阶段加载用时：219 ms
+[21:22:37.465] [Minecraft] 已创建 launcher_profiles.json：C:\Users\jessi\Desktop\personal_web\pCL2\.minecraft\
+[21:22:37.465] [Loader] 加载器 Minecraft Folder List 状态改变：Finished
+[21:22:37.797] [System] 窗口已置顶，位置：(448.666666666667, 259.333333333333), 810 x 500
+[21:22:37.806] [Animation] 动画线程开始
+[21:22:37.806] [Start] 第三阶段加载用时：94 ms
+[21:22:37.808] [Start] 加载 DLL：Json
+[21:22:37.809] [System] 获取资源：Json
+[21:22:37.826] [Launch] 没有已储存的 Minecraft 文件夹
+[21:22:37.826] [Loader] 加载器 Minecraft Folder List 状态改变：Loading
+[21:22:37.827] [Loader] 加载器 Minecraft Folder List 状态改变：Finished
+[21:22:37.840] [Setup] 当前选择的 Minecraft 文件夹：C:\Users\jessi\Desktop\personal_web\pCL2\.minecraft\
+[21:22:37.840] [Launch] Minecraft 文件夹：C:\Users\jessi\Desktop\personal_web\pCL2\.minecraft\
+[21:22:37.842] [Launch] Minecraft 版本无效，没有有效版本
+[21:22:37.851] [Loader] 加载器 Minecraft Version List 状态改变：Loading
+[21:22:37.864] [Setup] 当前选择的 Minecraft 版本：
+[21:22:37.865] [Minecraft] 未找到可用 Minecraft 版本
+[21:22:37.865] [Loader] 加载器 Minecraft Version List 状态改变：Finished
+[21:22:37.872] [Launch] 无可用 Minecraft 版本
+[21:22:37.930] [Java] 缓存中有 2 个可用的 Java：
+[21:22:37.931] [Java]  - JRE 8 (8.0.333)，64 位：C:\Program Files\Java\jre1.8.0_333\bin\
+[21:22:37.931] [Java]  - JDK 17 (17.0.8)，64 位：C:\Users\jessi\AppData\Roaming\.minecraft\runtime\java-runtime-gamma-snapshot\bin\
+[21:22:38.018] [Page] 实例化：清空自定义主页 UI，来源为空
+[21:22:38.037] [Minecraft] 启动按钮：无 Minecraft 版本，要求下载
+[21:22:38.138] [Loader] 加载器 DlClientList Mojang 状态改变：Loading
+[21:22:38.139] [Loader] 加载器 PCL 服务 状态改变：Loading
+[21:22:38.141] [Server] 正在连接到 PCL 服务器
+[21:22:38.146] [Net] 获取网络结果：https://launchermeta.mojang.com/mc/game/version_manifest.json，超时 10000ms，要求 json
+[21:22:38.155] [Net] 获取网络结果：https://pcl2-server-1253424809.file.myqcloud.com/notice.cfg?sign=1737253358-70247cd8-0-524bff4843fa11ebeaab0ab27ae2a24a，超时 10000ms
+[21:22:38.523] [System] DPI：144，系统版本：10.0.22631.0，PCL 位置：C:\Users\jessi\Desktop\personal_web\pCL2\Plain Craft Launcher 2.exe
+[21:22:38.559] [Loader] 加载器 DlClientList Mojang 状态改变：Finished
+[21:22:40.040] [Control] 按下图标按钮：BtnTitleClose
+[21:22:40.044] [System] 收到关闭指令
+[21:22:40.275] [System] 程序已退出，返回值：Success

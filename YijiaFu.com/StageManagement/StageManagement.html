@@ -1,0 +1,96 @@
+
+
+<html>
+    <head>
+        <title>Yijia Fu - Stage Manager & Theatre Technician</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+<body>
+   <!-- 导航栏占位符 -->
+   <div id="navbar-placeholder"></div>
+
+   <!-- 加载导航栏的脚本 -->
+   <script>
+       fetch('./navbar.html') // 修改路径以确保文件正确引用
+    .then(response => {
+        if (!response.ok) {
+            throw new Error('Network response was not ok');
+        }
+        return response.text();
+    })
+    .then(data => {
+        document.getElementById('navbar-placeholder').innerHTML = data;
+    })
+    .catch(error => console.error('Error loading navbar:', error));
+
+   </script>
+   <div>
+        <button type="button" onclick="window.location.href='aabb.html';"><span></span>Stage Management</button>
+   </div>
+   <!-- <iframe src="https://docs.google.com/document/d/e/2PACX-1vTZBAjIqyXIMRvBHbSaZuXl9ySOQqVx3f1VkdQTAZFqdi78ONheQydJTMSdmVJ6xrIPkqRynXQvUSwH/pub?embedded=true"
+   width= "60%" 
+   height="70%" 
+   frameborder="0" 
+   scrolling= "Yes">
+</iframe> 没看懂我之前这里想些什么-->
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>项目展示</title>
+    <link rel="stylesheet" href="style-sub.css">
+</head>
+
+    <div class="project">
+        <div class="image-slider">
+            <div class="slides">
+                <img src="image1.jpg" alt="项目图片1">
+                <img src="image2.jpg" alt="项目图片2">
+                <img src="image3.jpg" alt="项目图片3">
+            </div>
+            <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+            <button class="next" onclick="moveSlide(1)">&#10095;</button>
+        </div>
+        <div class="description">
+            <h2>项目标题</h2>
+            <p>这里是项目的描述内容。您可以详细介绍项目的背景、功能和特点。</p>
+        </div>
+    </div>
+
+    <!-- 可以复制上述 .project 块，创建多个项目展示 -->
+<!-- 这一段是宛平剧院的 -->
+
+    <div class="project">
+        <div class="image-slider">
+            <div class="slides">
+                <img src="image1.jpg" alt="项目图片1">
+                <img src="image2.jpg" alt="项目图片2">
+                <img src="image3.jpg" alt="项目图片3">
+            </div>
+            <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+            <button class="next" onclick="moveSlide(1)">&#10095;</button>
+        </div>
+      
+        <div class="description">
+            
+            <h2>Internship At Shanghai Wanping Theatre</h2>
+            <h3> 2024 Jan-Jun</h3>
+            <p>This is a theatre that integrates heritage experience, educational promotion, and cultural exchange. I contributed in the "Arts Education" department, which was established in 2022. Despite being a newly established department, it has garnered significant attention by bringing traditional arts into the public eye, including but not limited to opera costumes, tea ceremonies, and handicrafts.
+
+                In this department, we tailor our strategies to different age groups to make traditional arts more accessible. For instance, the "Xiwawan's Treasure Box" event is a parent-child interactive lecture. By using familiar and lively stories as a foundation, we combine an appropriate amount of knowledge with interactive activities, live demonstrations of props, and snippets of actor performances to create an engaging experience for both adults and children. For example, we designed headbands labeled with names of costume components and distributed them to children. During the lecture, they are invited to raise their hands when the corresponding costume is discussed and participate in games at the end, grouping by costume categories to reinforce their understanding.
+                
+                For more mature audiences, we offer professional and detailed insights. During close-up demonstrations of makeup and costume changes, we explain the heritage and cultural significance behind each element. For example, actors use “pieces” made of elm bark glue to shape their hair. In the traditional Peking opera The Legend of the White Snake, we show how three sets of costumes represent the protagonist Bai Suzhen's psychological states and character development. In the third act, where she is defeated, fleeing, and about to give birth, the costume design includes two white cloth strips and a lock of hair draped over her chest to symbolize her desperation and sorrow.
+                
+                Additionally, we organize small craft-making activities to engage more participants in creating cultural-themed dolls and decorations. These activities are designed for families and groups, with themes adjusted according to holidays. For instance, on Women's Day, we featured Qing and Bai Snake dolls from The Legend of the White Snake, representing female strength, while on Children's Day, we created whimsical Monkey King dolls from Journey to the West. These events not only broaden weekend options for families but also attract a large number of visitors to the theatre. This exposure encourages them to follow subsequent activities and return to the theatre for more performances.</p>
+        </div>
+    </div>
+</div>
+
+
+    <script src="scripts.js"></script>
+
+
+</body>
+</html>

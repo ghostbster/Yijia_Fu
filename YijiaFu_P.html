@@ -1,0 +1,67 @@
+<html>
+    <head>
+        <title>Yijia Fu - Stage Manager & Theatre Technician</title>
+        
+            <style>
+                /* 在此网页中使用的独立样式 */
+                .button-container {
+                    display: flex;
+                    justify-content: space-around;
+                    align-items: flex-end;
+                    margin-top: 20px;
+                }
+                .item {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    margin: 10px;
+                }
+                .item img {
+                    width: 100px;
+                    height: auto;
+                    margin-bottom: 10px;
+                }
+                button {
+                    width: 100px;
+                    padding: 10px;
+                    font-size: 14px;
+                    cursor: pointer;
+                }
+            </style>
+        
+        
+    </head>
+
+<body>
+      <!-- 导航栏占位符 -->
+      <div id="navbar-placeholder"></div>
+
+      <!-- 加载导航栏的脚本 -->
+      <script>
+          fetch('navbar.html')
+              .then(response => response.text())
+              .then(data => {
+                  document.getElementById('navbar-placeholder').innerHTML = data;
+              })
+              .catch(error => console.error('Error loading navbar:', error));
+      </script>
+       
+     <div> 
+        <div class="button-container">
+            <div class="item">
+                <img src="../pic1.jpg" alt="Image 1" class="item-image">
+                <button type="button" onclick="window.location.href='StageManagement.html';"><span></span>Stage Management</button>
+            </div>
+            <div class="item">
+                <img src="image2.jpg" alt="Image 2" class="item-image">
+                <button type="button" onclick="window.location.href='page2.html';"><span></span>Theatre Technician</button>
+            </div>
+            <div class="item">
+                <img src="image3.jpg" alt="Image 3" class="item-image">
+                <button type="button" onclick="window.location.href='page3.html';"><span></span>Posters and Others</button>
+            </div>
+        </div>
+        
+             
+</body>
+</html>

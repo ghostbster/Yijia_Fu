@@ -1,0 +1,53 @@
+<html>
+    <head>
+        <title>Yijia Fu - Stage Manager & Theatre Technician</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+<body>
+    
+        <!-- 导航栏占位符 -->
+      <div id="navbar-placeholder"></div>
+
+      <!-- 加载导航栏的脚本 -->
+      <script>
+          fetch('navbar.html')
+              .then(response => response.text())
+              .then(data => {
+                  document.getElementById('navbar-placeholder').innerHTML = data;
+              })
+              .catch(error => console.error('Error loading navbar:', error));
+      </script>
+    <!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>项目展示</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="project">
+        <div class="image-slider">
+            <div class="slides">
+                <img src="image1.jpg" alt="项目图片1">
+                <img src="image2.jpg" alt="项目图片2">
+                <img src="image3.jpg" alt="项目图片3">
+            </div>
+            <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+            <button class="next" onclick="moveSlide(1)">&#10095;</button>
+        </div>
+        <div class="description">
+            <h2>项目标题</h2>
+            <p>这里是项目的描述内容。您可以详细介绍项目的背景、功能和特点。</p>
+        </div>
+    </div>
+
+    <!-- 可以复制上述 .project 块，创建多个项目展示 -->
+
+    <script src="scripts.js"></script>
+</body>
+</html>
+
+</body>
+</html>

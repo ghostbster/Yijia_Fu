@@ -1,0 +1,74 @@
+<html>
+    <head>
+        <title>Yijia Fu - Stage Manager & Theatre Technician</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script>
+        (function() {
+            emailjs.init("CVeLS4m7IrK34VC_l"); // 替换成你的 EmailJS 用户 ID
+        })();
+        
+        function sendEmail(e) {
+            e.preventDefault();
+            emailjs.sendForm('service_fnnf1kf', 'template_frhqc6n', e.target)
+                .then((result) => {
+                    alert('Message sent successfully!');
+                }, (error) => {
+                    alert('Failed to send message: ' + error.text);
+                });
+        }
+    </script>
+    </head>
+
+<body>
+    
+       <!-- 导航栏占位符 -->
+      <div id="navbar-placeholder"></div>
+
+      <!-- 加载导航栏的脚本 -->
+      <script>
+          fetch('navbar.html')
+              .then(response => response.text())
+              .then(data => {
+                  document.getElementById('navbar-placeholder').innerHTML = data;
+              })
+              .catch(error => console.error('Error loading navbar:', error));
+      </script>
+      
+    
+      <div class="contact-container">
+        <img src="../pic2.jpg" alt="../pic3.jpg" class="contact-photo">
+        <div class="contact-info">
+            <h1>Contact Information</h1><br>
+            <p class="contact-item">Email: <a href="mailto:jessicaplus8133@gmail.com" class="email">Jessicaplus8133@gmail.com</a></p>
+            <p>Phone: (743) 207-6787</p>
+            <!-- Add other contact details here -->
+       
+    
+      
+
+    <!-- <h1>Contact Me</h1> -->
+    <form onsubmit="sendEmail(event)">
+        <label for="name">Name*:</label>
+        <input type="text" id="name" name="from_name" required><br><br>
+
+        <label for="email">Email*:</label>
+        <input type="email" id="email" name="from_email" required><br><br>
+
+        <label for="subject">Subject:</label>
+        <input type="subject" id="subject" name="from_subject" ><br><br>
+
+        <label for="message">Message*:</label><br>
+        <textarea id="message" name="message" rows="4" cols="50" required></textarea><br><br>
+
+        <input type="submit" value="Send">
+    </form>
+</div>
+</div>
+
+
+    
+</body>
+</html>
+
+

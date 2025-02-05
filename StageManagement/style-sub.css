@@ -1,0 +1,294 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+html, body {
+    height: 100%;
+    margin: 0; /* 确保没有默认的边距 */
+}
+
+/* style.css */
+body {
+    background-image: linear-gradient(rgba(108, 108, 108, 0.25), rgba(49, 44, 44, 0.3)), url(../background.jpg);
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    width: 100%;
+    height: 100vh;
+    max-width: 100%;
+}
+
+@media (max-width: 768px) {
+    png {
+        width: 80%;
+    }
+}
+
+.navbar {
+    width: 85%;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    width: 120px;
+    cursor: pointer;
+}
+
+.navbar ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+    font-size: clamp(12px, 2vw, 16px);
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: #5e5e5e;
+    text-transform: uppercase;
+}
+
+.navbar ul li::after {
+    content: '';
+    height: 3px;
+    width: 0%;
+    background: #7cc2bb;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+}
+
+.navbar ul li:hover:after {
+    width: 100%;
+}
+
+.content {
+    width: 95%;
+    position: relative;
+    top: 55px;
+    transform: translateY(-70px);
+    display: flex;
+    justify-content: space-between;
+    text-align: left;
+    margin-right: 100px;
+    color: #212020;
+}
+
+.content h1 {
+    font-size: 70px;
+    margin-bottom: 20px;
+}
+
+.content p {
+    margin: 25px;
+    width: 70%;
+    font-weight: 100;
+    line-height: 25px;
+    font-size: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+button {
+    width: 200px;
+    padding: 15px 0;
+    text-align: center;
+    margin: 20px 10px;
+    border-radius: 25px;
+    font-weight: bold;
+    border: 2px solid #009688;
+    background: transparent;
+    color: #fff;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+span {
+    background: #009688;
+    height: 100%;
+    width: 0;
+    border-radius: 25px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: 0.5s;
+}
+
+button:hover span {
+    width: 100%;
+}
+
+button:hover {
+    border: none;
+}
+
+.headshot {
+    width: 30%;
+    height: auto;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+    .content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .text {
+        width: 100%;
+        margin-right: 0;
+    }
+
+    .my-image {
+        width: 100%;
+        margin-top: 20px;
+    }
+}
+/*这一段是给文本框加滚动条的*/
+.scrollable-container {
+    width: 300px; /* 设置容器的宽度 */
+    height: 150px; /* 设置容器的高度 */
+    padding: 10px; /* 内边距，确保文本不贴边 */
+    margin: 20px auto; /* 上下外边距为20px，左右居中 */
+    background-color: rgba(255, 255, 255, 0.8); /* 背景颜色，带有透明度 */
+    border: 1px solid #ccc; /* 边框颜色 */
+    border-radius: 5px; /* 圆角边框 */
+    overflow-y: auto; /* 当内容溢出时，添加垂直滚动条 */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* 添加阴影效果 */
+    backdrop-filter: blur(5px); /* 背景模糊效果 */
+}
+/* 全局样式 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+/* 背景样式 */
+body {
+    background-image: linear-gradient(rgba(108, 108, 108, 0.25), rgba(49, 44, 44, 0.3)), url('../background.jpg');
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+}
+
+/* 导航栏样式 */
+.navbar {
+    width: 85%;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    width: 120px;
+    cursor: pointer;
+}
+
+.navbar ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: #5e5e5e;
+    text-transform: uppercase;
+}
+
+.navbar ul li::after {
+    content: '';
+    height: 3px;
+    width: 0;
+    background: #7cc2bb;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+}
+
+.navbar ul li:hover::after {
+    width: 100%;
+}
+
+/* 项目展示样式 */
+.project {
+    display: flex;
+    align-items: center;
+    margin: 20px;
+}
+
+.image-slider {
+    position: relative;
+    width: 50%;
+    overflow: hidden;
+}
+
+.slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slides img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+.description {
+    width: 50%;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    max-height: 200px; /* 限制显示高度 */
+    overflow-y: auto; /* 启用垂直滚动 */
+}
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+    .project {
+        flex-direction: column;
+    }
+    .image-slider, .description {
+        width: 100%;
+    }
+}
